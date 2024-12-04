@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut</title>
+    <link rel="stylesheet" href="styles.css">
+    <script langage="javascript" type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="index.html"><img class="nav-img" src="resources/nav.png" alt="logo"></a></li>
+            <li class="nav-item"><a href="index.html"> Home</a> </li>
+            <li class="nav-item"><a href="#menue">Menues</a></li>
+            <li class="nav-item"><a href="#delivery">Delivery</a></li>
+            <li class="nav-item"><a href="about.html">About Us</a></li>
+        </ul>
+    </div>
+    <div class="hero">
+        <img src="resources/hero-bg.jpg" alt="">
+
+
+        <div class="center-hero">
+            <h1>Welcome to pizza hut </h1>
+            <p class="link">We Provide Best Pizza For You</p>
+            <div class="btn">
+                <button>Brows Pizza</button>
+            </div>
+        </div>
+    </div>
+    <div class="pizza-menue" id="menue">
+        <h1>Choose Best pizza for your preference</h1>
+        <h2>Vegitarian pizza</h2>
+        <table>
+            <tr>
+                <td class="td1">
+                    <div class="pizza-item">
+                        <h4>mashroom pizza</h4>
+                        <img src="resources/veg1.jpg" alt="mashroom">
+                        <p class="pizza-disc">This mushroom pizza is a white pizza that's covered with mozzarella
+                            cheese, goat cheese, and fresh herbs. It's perfection!</p>
+                    </div>
+                </td>
+                <td class="td1">
+                    <div class="pizza-item">
+                        <h4>Pinapple pizza</h4>
+                        <img src="resources/veg2.jpg" alt="mashroom">
+                        <p class="pizza-disc">Hawaiian pizza is the perfect combination of sweet and savory flavors with
+                            salty bacon and juicy pineapple loaded on top of a crispy crust.</p>
+                    </div>
+                </td>
+                <td class="td1">
+                    <div class="pizza-item">
+                        <h4>Tomatto pizza</h4>
+                        <img src="resources/veg3.jpg" alt="mashroom">
+                        <p class="pizza-disc">Tomatoes, tossed with honey, garlic and fresh herbs, are scattered on the
+                            creme-fraiche-smeared pizza dough before the pizza is baked</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+        <h2>Non-vegitarian pizza</h2>
+        <table class="tbl1">
+            <tr>
+                <td class="td1">
+                    <div class="pizza-item">
+                        <h4>Chiken pizza</h4>
+                        <img src="resources/n-veg1.jpg" alt="mashroom">
+                        <p class="pizza-disc">This mushroom pizza is a white pizza that's covered with mozzarella
+                            cheese, goat cheese, and fresh herbs. It's perfection!</p>
+                    </div>
+                </td>
+                <td class="td1">
+                    <div class="pizza-item">
+                        <h4>Beef pizza</h4>
+                        <img src="resources/n-veg2.jpg" alt="mashroom">
+                        <p class="pizza-disc">Hawaiian pizza is the perfect combination of sweet and savory flavors with
+                            salty bacon and juicy pineapple loaded on top of a crispy crust.</p>
+                    </div>
+                </td>
+                <td class="td1">
+                    <div class="pizza-item">
+                        <h4>Pork pizza</h4>
+                        <img src="resources/n-veg3.jpg" alt="mashroom">
+                        <p class="pizza-disc">Tomatoes, tossed with honey, garlic and fresh herbs, are scattered on the
+                            creme-fraiche-smeared pizza dough before the pizza is baked</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="delivery" id="delivery">
+        <div class="container">
+            <h1 class="head-text"> We Deliver Pizza to Your Homefront</h1>
+           
+                <div class="row">
+                    <div class="column f1">
+                        <img src="resources/delevery.png" alt="">
+                    </div>
+                    <div class="column f2">
+                        <div class="form">
+                            <h3>Please Fill Relevent Details to Deliver</h3>
+                            <table>
+                                <tr>
+                                    <td><label for="name">Enter Your Name</label></td>
+                                    <td><input type="text" name="name" id="name">
+                                        <lable class="err" id="nameErr"></lable>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label for="name">Enter Your Email</label></td>
+                                    <td><input type="text" name="email" id="email">
+                                        <lable class="err" id="mailErr"></lable>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="address">Enter Delivery Address</label></td>
+                                    <td><textarea name="address" id="address" cols="30" rows="10"></textarea>
+                                        <lable class="err" id="addrErr"></lable>
+                                    </td>
+
+
+                                </tr>
+
+
+
+                            </table>
+                        </div>
+                        <div class="form">
+                        <h3>Please choose Pizza Type</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    Choose Pizza Type
+                                </td>
+                                <td>
+                                    <select name="pizza" id="pizza">
+                                        <option value="1">Mashroom pizza</option>
+                                        <option value="2">Pinapple Pizza</option>
+                                        <option value="3">Tomatto Pizza</option>
+                                        <option value="4">Chiken Pizza</option>
+                                        <option value="5">Beef Pizza</option>
+                                        <option value="6">Pork Pizza</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Choose Pizza Count
+                                </td>
+                                <td>
+                                    <input type="number" name="number" id="number">
+                                    <lable class="err" id="numErr"></lable>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn-sub" onclick="myfunc()">Submit</button></td>
+                            </tr>
+                        </div>
+                        </table>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div class="about" id="about" style="background-color: rgb(164, 175, 185);">
+        <h1 style="text-align: center; margin-top: -5px;"> About us</h1>
+        <div class="row " >
+            <div class="column f1">
+                <ul>
+                    <li> <h2>We provide best service</h2></li>
+                    <li><h2>24/7 customer service</h2></li>
+                    <li><h2>More than 7 pizza types</h2></li>
+                    <li><h2>We have less Delivery fee</h2></li>
+                </ul>
+            </div>
+            <div class="column">
+            <img src="https://cdn.dribbble.com/users/1787720/screenshots/6905961/contact-illustration.gif" alt="" width="100%" height="500px">
+            </div>
+        </div>
+       
+    </div>
+
+
+
+
+    <div class="footer">
+        <h3>Pizza Hut</h3>
+        <p>All Right Recived</p>
+        <p class="creater"> TMSC Karunarathna <br> @2023</p>
+        -***no css/javascript freamwork is used for build this***-
+        
+    </div>
+
+</body>
+
+</html>
